@@ -16,6 +16,7 @@ Our project **RAVEN** is trying to clear these problem by providing easy to use 
 Using this computer we can control one camera which stream directly video on the web and take picture when the robot meet obstacle,after that you can see that picture on the map which the rover creates for you.   
 **Arduino** -> A fully open source inviroment with tons of examples giving you idea how to start,it is ideal platform for us,because we want the user to make their prototypes easily without a lot of effort.
 In our case arduino handles the whole object avoidance algorithm.   
-**Web** -> Because we live in 21 century we created website using latest tehnology in rendering and communication which allowed us to show video live stream and real time map making with obsticle integration where user not only can see whats going on but also can send commands to the robot.
+**Web** -> Because we live in 21 century we created website using latest tehnology in rendering and communication which allowed us to show video live stream and real time map making with obsticle integration where user not only can see whats going on but also can send commands to the robot.   
+Combining all these tehnologies with Scratch API we make easy to use platform + hardware + super easy to use interface where you just drag and drop blocks and make the 'thing' tic tac.
 
 
