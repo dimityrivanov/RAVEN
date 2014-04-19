@@ -1,0 +1,86 @@
+body
+{
+	width:1340px;
+	margin:10px auto;
+}
+
+#header
+{
+	float:left;
+	width:100%;
+	height:150px;
+}
+
+#logos
+{
+	
+}
+
+#map
+{
+	float:left;
+	width:600px;
+	height:600px;
+	border:1px solid #000;
+}
+
+#videoFrame
+{
+	float:left;
+	border:0px;
+	margin-left:10px;
+	margin-top:-48px;
+}
+
+#cameraRotate
+{
+	float:left;
+	margin-left:20px;
+	magin-top:10px;
+	width:120px;
+}
+
+#cameraRotateValue1, #cameraRotateValue2
+{
+	float:left;
+	width:30px;
+	height:20px;
+	margin:5px 0px;
+	margin-left:15px;
+}
+
+#cameraRotateLabel1, #cameraRotateLabel2
+{
+	float:left;
+	margin:5px 0px;
+}
+
+#cameraRotateSubmit
+{
+	float:left;
+	width:95px;
+	height:20px;
+	cursor:pointer;
+	border:1px solid #000;
+	margin-top:5px;
+	padding:0px 5px;
+}
+
+#sizeMetres
+{
+	float:left;
+	position:relative;
+	left:-200px;
+	padding:10px;
+	background-color:rgba(200,200,200,0.2);
+}
+
+#sizeMetresLabel
+{
+	float:left;
+}
+
+#sizeMetresValue
+{
+	float:left;
+}
