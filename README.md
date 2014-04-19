@@ -5,18 +5,39 @@ Open source educational robot
 
 Description
 ====
-Nowadays, technologies are advancing rapidly fast,scientist and engineers are trying to make everything smaller and more functional,because of that there are people that can't learn the tehnology they provide,because its either hard to learn or not easy to use.
-NASA is one example for that,every year they are trying to inovate and thing of the best way to produce something here on Earth that can survive on other planets and surroundings,If we think a little there are a lot of interesting stuff that non engineers,hobbyists,students,childrens want to try,but often what stops them its the funding or the mass contruction of the 'thing'.
-Our project **RAVEN** is trying to clear these problem by providing easy to use platform + control API which gives the freedom to user to setup any kind of platform he likes for any enviroment and any type of hardware.
+The universe is the biggest unknown for humankind. Historically, there were many unknowns - the shape of
+Planet Earth, how to prepare for a spaceflight, how to land on the Moon, etc.   
+Very skilled scientiests and engineers and therefore very few were smart enough to 
+design the tools and invent the technology in order to gather
+more knowledge needed to explore the space.    Nowadays, more than 50 years after the first successful
+spaceflight, people have wide variety of technologies and tools. Unfortunately, not many of them are
+easy to learn and use.    On the contrary, there are many willing to learn, participate and innovate for
+that cause - space exploration - the next challenge for the mankind. 
+
+**RAVEN** is built to overcome that challenge and expose the right set of tools, hardware and software to
+everyone who wants to try and experiment, even children. It consists of:
+1) a model of an intelligent autonomous robot,
+2) a modular hardware system that is easily upgradeable and cheap,
+3) an easy to use API to control it.
+Having all that a lot of algorithms can be developed, tested and emulated on Earth, in schools, at home before
+applied in a real robot that can be sent to explore the space.
 **RAVEN** construction
 ====
-**RAVEN** is constructed from the following parts and materials:   
-**Rover 5 Robot Platform** -> https://www.sparkfun.com/products/10336   
-**Raspberry Pi Model B** -> We chosed this pc,because the main concept of it was to provide computers all over the world mostlly in poor cities for educational purpose and not only.
-Using this computer we can control one camera which stream directly video on the web and take picture when the robot meet obstacle,after that you can see that picture on the map which the rover creates for you.   
-**Arduino** -> A fully open source inviroment with tons of examples giving you idea how to start,it is ideal platform for us,because we want the user to make their prototypes easily without a lot of effort.
-In our case arduino handles the whole object avoidance algorithm.   
-**Web** -> Because we live in 21 century we created website using latest tehnology in rendering and communication which allowed us to show video live stream and real time map making with obsticle integration where user not only can see whats going on but also can send commands to the robot.   
-Combining all these tehnologies with Scratch API we make easy to use platform + hardware + super easy to use interface where you just drag and drop blocks and make the 'thing' tic tac.
+**Arduino** -> An open source enviroment with flourishing and growing community, lots of examples giving you idea
+how to start and allows the user to rapidly prototype algorithms. In the test example obstacle avoidance algorithm
+is implemented on top of Arduino.   
+
+**Raspberry Pi Model B** -> This is a fully functional PC which is cheap and powerful enough. Using this computer 
+a map with the robot's movement can be drawn, a live streaming of what robot is seeing can be viewed and a
+navigation API can be exposed so that one can control the robot easily without taking care of the low level
+problems in the entire system.   
+
+**Navigation API** -> one can easily control the robot with it.   
+
+**Web** -> There is a web page where one can browse on a map which is showing where the robot is and where it was.   
+The map is built dynamically based on the robot's movement. An obstacles which robot is encountering are saved
+on the map so clicking over an obstacle one can see a picture of it.   
+There a live stream video can also be watched showing
+what the robot is viewing now.     Another functionality is to make the robot move to a specific place.
 
 
