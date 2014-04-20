@@ -5,41 +5,35 @@ RAVEN
 
 Open source educational robot
 
+Video
+====
+https://vimeo.com/92450833
+
+
 Description
 ====
-The universe is the biggest unknown for humankind. Historically, there were many unknowns - the shape of
-Planet Earth, how to prepare for a spaceflight, how to land on the Moon, etc.   
-Very skilled scientiests and engineers and therefore very few were smart enough to 
-design the tools and invent the technology in order to gather
-more knowledge needed to explore the space.    Nowadays, more than 50 years after the first successful
-spaceflight, people have wide variety of technologies and tools. Unfortunately, not many of them are
-easy to learn and use.    On the contrary, there are many willing to learn, participate and innovate for
-that cause - space exploration - the next challenge for the mankind. 
+Ever since the first space exploration programs were founded but have been run by closed groups in institutes around the world.    
+The technologies used, being complex and costly, have driven away many interested people willing to work in the area.    
+**RAVEN’s** main goal is to change this and allow any open-minded person to contribute to the common cause of space exploration.   
+Our project so far has achieved just the beginning of the whole idea. We have built a basic robot entirely made up of affordable and easy to get parts, and with open-source software.   
+Our rover is the base, on top of which people can implement their ideas anywhere – at universities, schools, or even at home.   
+The rover’s modularity allows parts to be easily appended or replaced.   
+The processing powers of both the microcontroller and the microcomputer included are enough to implement highly complex logic.   
+The mechanical parts – sensors, wheels, etc. – can easily be manipulated by the code via a communication interface, which is the combination of the parts’ drivers.    
+Community-run open-source development can rapidly gather a large quantity of solutions.   
+Combining them can lead to qualitative changes in the way we explore space.    
+**RAVEN’s** visionary goal is to create modular landing gear that can be upgraded and updated based on the need that it faces on the working spot; a self-adjustable robot that can provide feedback back to Earth and secure safe laboratory space prior to astronauts’ arrival.   
 
-**RAVEN** is built to overcome that challenge and expose the right set of tools, hardware and software to
-everyone who wants to try and experiment, even children. It consists of:
-1) a model of an intelligent autonomous robot,
-2) a modular hardware system that is easily upgradeable and cheap,
-3) an easy to use API to control it.
-Having all that a lot of algorithms can be developed, tested and emulated on Earth, in schools, at home before
-applied in a real robot that can be sent to explore the space.
 **RAVEN** construction
 ====
-**Arduino** -> An open source enviroment with flourishing and growing community, lots of examples giving you idea
-how to start and allows the user to rapidly prototype algorithms. In the test example obstacle avoidance algorithm
-is implemented on top of Arduino.   
+Arduino: An open source environment with a growing community, providing lots of trials, showing developers how to start prototyping ideas. In our base build, the obstacle-avoidance algorithm is implemented on Arduino.   
 
-**Raspberry Pi Model B** -> This is a fully functional PC which is cheap and powerful enough. Using this computer 
-a map with the robot's movement can be drawn, a live streaming of what robot is seeing can be viewed and a
-navigation API can be exposed so that one can control the robot easily without taking care of the low level
-problems in the entire system.   
+**Raspberry Pi Model B:** This is a fully functional microcomputer, which is cheap and powerful enough to run all necessary services to utilize any idea.    
+Using this computer with Linux, we have been able to set up a web server – LAMP (Linux, Apache, MySQL, PHP) – to forward information to users.    
+Separating it from the Arduino code allows the development of high level logic, which communicates with the rover’s firmware through an interface, so it doesn’t have to bother with the low level implementations.   
+**Web:** We have set up a web server on the Raspberry Pi, which is the intermediate layer transforming the sensors’ raw data into user-friendly visualization.   
+Currently, it draws a map of the rover’s movement, on which it shows pictures associated with each obstacle the robot has passed round, provides a video live stream, and navigation controls to point the rover to a specific place, or turn its cameras to see a particular object.   
 
-**Navigation API** -> one can easily control the robot with it.   
-
-**Web** -> There is a web page where one can browse on a map which is showing where the robot is and where it was.   
-The map is built dynamically based on the robot's movement. An obstacles which robot is encountering are saved
-on the map so clicking over an obstacle one can see a picture of it.   
-There a live stream video can also be watched showing
-what the robot is viewing now.     Another functionality is to make the robot move to a specific place.
+**Navigation API:** that is the aforementioned interface between the high and low level logics. It consists of the rover’s drivers – the used elements’ public communication functions, which can be readily used in any programming logic, even in basic frameworks like Scratch for children.
 
 
