@@ -12,7 +12,7 @@ https://vimeo.com/92450833
 
 Description
 ====
-Ever since the first space exploration programs were founded but have been run by closed groups in institutes around the world.    
+Ever since the first space exploration programs were founded, they have been run by closed groups in institutes around the world.    
 The technologies used, being complex and costly, have driven away many interested people willing to work in the area.    
 **RAVEN’s** main goal is to change this and allow any open-minded person to contribute to the common cause of space exploration.Our project so far has achieved just the beginning of the whole idea. We have built a basic robot entirely made up of affordable and easy to get parts, and with open-source software.Our rover is the base, on top of which people can implement their ideas anywhere – at universities, schools, or even at home.   
 The rover’s modularity allows parts to be easily appended or replaced.    
